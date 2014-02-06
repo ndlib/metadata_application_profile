@@ -18,27 +18,15 @@ title: Metadata Elements
   <tbody>
   {% for element in site.data.elements %}
   <tr class="element">
-    <td>{{ element.name }}</td>
+    <td id="{{ element.attribute }}_element">{{ element.name }}</td>
     <td>
-      {% if element.required %}
-        Yes
-      {% else %}
-        No
-      {% endif %}
+      {% if element.required   %} Yes {% else %} No {% endif %}
     </td>
     <td>
-      {% if element.repeatable %}
-        Yes
-      {% else %}
-        No
-      {% endif %}
+      {% if element.repeatable %} Yes {% else %} No {% endif %}
     </td>
     <td>
-      {% if element.generated %}
-        Yes
-      {% else %}
-        No
-      {% endif %}
+      {% if element.generated  %} Yes {% else %} No {% endif %}
     </td>
     {% if element.terms %}
     <td>
