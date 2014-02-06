@@ -1,8 +1,11 @@
-name: Metadata Application Profile
+name: Digital Metadata Standards at the Hesburgh Libraries
+description: Our metadata standards for digital documents and media.
 markdown: redcarpet
-pygments: true
+permalink: /:categories/:title/
+pygments: false
 exclude:
   - '.ruby-version'
   - 'Gemfile'
   - 'Gemfile.lock'
   - 'README.md'
+

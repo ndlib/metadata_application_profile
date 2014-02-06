@@ -1,5 +1,5 @@
 ---
-title:
+- name:      'Title'
   generated:  false
   repeatable: false
   required:   true
@@ -7,7 +7,8 @@ title:
     - 'dc:title'
   microdata:
     - 'name'
-'alternate title':
+
+- name:       'Alternate Title'
   generated:  false
   repeatable: true
   required:   false
@@ -15,7 +16,8 @@ title:
     - 'dc:title.alternative'
   microdata:
     - 'alternateName'
-creator:
+
+- name:       'Creator'
   generated:  false
   repeatable: true
   required:   false
@@ -28,7 +30,8 @@ creator:
     - 'dc:creator.artist'
   microdata:
     - 'author'
-contributor:
+
+- name:       'Contributor'
   generated:  false
   repeatable: true
   required:   false
@@ -41,7 +44,8 @@ contributor:
     - 'dc:contributor.artist'
   microdata:
     - 'contributor'
-'date created':
+
+- name:       'Date Created'
   generated:  false
   repeatable: true
   required:   false
@@ -49,7 +53,8 @@ contributor:
     - 'dc:date.created'
   microdata:
     - 'dateCreated'
-description:
+
+- name:       'Description'
   generated:  false
   repeatable: true
   required:   false
@@ -59,7 +64,8 @@ description:
     - 'dc:description.tableofcontents'
   microdata:
     - 'description'
-'subject keywords':
+
+- name:       'Subject Keywords'
   generated:  false
   repeatable: true
   required:   false
@@ -70,7 +76,8 @@ description:
     - 'dc:subject.tgm'
   microdata:
     - 'keywords'
-'coverage spatial':
+
+- name:       'Coverage Spatial'
   generated:  false
   repeatable: true
   required:   false
@@ -78,13 +85,15 @@ description:
     - 'dc:coverage.spatial'
   microdata:
     - 'contentLocation'
-'coverage temporal':
+
+- name:       'Coverage Temporal'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc:coverage.temporal'
-language:
+
+- name:       'Language'
   generated:  false
   repeatable: true
   required:   false
@@ -92,21 +101,22 @@ language:
     - 'dc:language'
   microdata:
     - 'inLanguage'
-type:
+
+- name:       'Type'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc:type'
-'repository name':
+
+- name:       'Repository Name'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc:contributor.repository'
-  microdata:
-    - ''
-'publisher':
+
+- name:       'Publisher'
   generated:  false
   repeatable: true
   required:   false
@@ -114,7 +124,8 @@ type:
     - 'dc:publisher'
   microdata:
     - 'publisher'
-'source':
+
+- name:       'Source'
   generated:  false
   repeatable: true
   required:   false
@@ -122,25 +133,29 @@ type:
     - 'dc:source'
   microdata:
     - 'isBasedOnUrl'
-'digital publisher':
+
+- name:       'Digital Publisher'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc:publisher.digital'
-'date digitized':
+
+- name:       'Date Digitized'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc:date.digitized'
-'digitizing equipment':
+
+- name:       'Digitizing Equipment'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc:description:technical'
-'rights':
+
+- name:       'Rights'
   generated:  false
   repeatable: true
   required:   false
@@ -148,13 +163,15 @@ type:
     - 'dc:rights'
   microdata:
     - 'copyrightHolder'
-'collection name':
+
+- name:       'Collection Name'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc:relation:ispartof'
-'contributor institution':
+
+- name:       'Contributor Institution'
   generated:  false
   repeatable: false
   required:   false
@@ -162,7 +179,8 @@ type:
     - 'dc:contributor.institution'
   microdata:
     - 'sourceOrganization'
-'identifier':
+
+- name:       'Identifier'
   generated:  false
   repeatable: true
   required:   false
@@ -176,19 +194,22 @@ type:
     - 'dc:identifier.eissn'
     - 'dc:identifier.doi'
     - 'dc:identifier.patent'
-'pid':
+
+- name:       'Pid'
   generated:  true
   repeatable: false
   required:   true
   terms:
     - 'dc:identifier.URI'
-'format':
+
+- name:       'Format'
   generated:  true
   repeatable: false
   required:   false
   terms:
     - 'dc:format.mimetype'
-'size':
+
+- name:       'Size'
   generated:  false
   repeatable: true
   required:   false
@@ -197,7 +218,8 @@ type:
     - 'dc:format.extent.duration'
     - 'dc:format.extent.dimensions'
     - 'dc:format.extent.file'
-'date issued':
+
+- name:       'Date Issued'
   generated:  true
   repeatable: false
   required:   false
@@ -205,19 +227,22 @@ type:
     - 'dc:date.issued'
   microdata:
     - 'datePublished'
-'date accessioned':
+
+- name:       'Date Accessioned'
   generated:  true
   repeatable: false
   required:   false
   terms:
     - 'dc.date.accessioned'
-'date available':
+
+- name:       'Date Available'
   generated:  true
   repeatable: false
   required:   false
   terms:
     - 'dc.date.available'
-'date copyrighted':
+
+- name:       'Date Copyrighted'
   generated:  false
   repeatable: true
   required:   false
@@ -225,19 +250,22 @@ type:
     - 'dc.date.copyrighted'
   microdata:
     - 'copyrightYear'
-'permissions':
+
+- name:       'Permissions'
   generated:  false
   repeatable: false
   required:   false
   terms:
     - 'dc.permissions'
-'requires':
+
+- name:       'Requires'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc.requires'
-'version':
+
+- name:       'Version'
   generated:  false
   repeatable: true
   required:   false
@@ -245,7 +273,8 @@ type:
     - 'dc.isversionof'
   microdata:
     - 'version'
-'edition':
+
+- name:       'Edition'
   generated:  false
   repeatable: true
   required:   false
@@ -253,7 +282,8 @@ type:
     - 'dc.isversionof.edition'
   microdata:
     - 'bookEdition'
-'recommended citation':
+
+- name:       'Recommended Citation'
   generated:  true
   repeatable: true
   required:   false

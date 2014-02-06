@@ -1,0 +1,46 @@
+---
+layout: default
+title: Digital Metadata Standards at the Hesburgh Libraries
+---
+
+<table class="elements table">
+  <caption><h2>Metadata Elements</h2></caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Generated?</th>
+      <th>Repeatible?</th>
+      <th>Required?</th>
+      <th>DC Terms</th>
+      <th><a href="http://schema.org">Schema.org</a></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for element in site.data.elements %}
+  <tr class="element">
+    <td>{{ element.name }}</td>
+    <td>{{ element.generated }}</td>
+    <td>{{ element.repeatable }}</td>
+    <td>{{ element.required }}</td>
+    {% if element.terms %}
+    <td>
+      <ul class="dc-terms listing">
+        {% for term in element.terms %}
+        <li>{{term}}</li>
+        {% endfor %}
+      </ul>
+    </td>
+    {% endif %}
+    <td>
+    {% if element.microdata %}
+      <ul class="itemprops listing">
+        {% for itemprop in element.microdata %}
+        <li><a href="http://schema.org/{{itemprop}}/">{{itemprop}}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody
+</table>
