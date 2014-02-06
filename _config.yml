@@ -1,0 +1,8 @@
+name: Metadata Application Profile
+markdown: redcarpet
+pygments: true
+exclude:
+  - '.ruby-version'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'README.md'

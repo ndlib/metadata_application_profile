@@ -1,0 +1,69 @@
+/* Footer
+ * -------------------------------------------------- */
+
+.footer {
+	text-align: center;
+	padding: 30px 0;
+	border-top: 1px solid #e5e5e5;
+	background-color: #fcfcfc;
+}
+.footer p {
+	margin-bottom: 0;
+	color: #777;
+}
+.footer-links {
+	margin: 10px 0;
+}
+.footer-links li {
+	display: inline;
+	padding: 0 2px;
+}
+.footer-links li:first-child {
+	padding-left: 0;
+}
+
+
+/* Local Styles
+ * -------------------------------------------------- */
+html {
+	background-color: #fcfcfc;
+}
+
+.home {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.page {
+	padding-bottom: 70px;
+}
+
+.post .page-header h2,
+.post .page-header p {
+	margin-bottom: 0;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.tagline {
+	font-size: 17.5px;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+.articles .listing {
+	margin-left: 0;
+}
+
+.articles .listing li {
+	list-style-type: none;
+}
+
+.listing .title {
+  margin-bottom: 0;
+}
+
+.pull-right {
+	float: right;
+}
