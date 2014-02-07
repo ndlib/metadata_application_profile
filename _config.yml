@@ -1,11 +1,13 @@
-name: Digital Metadata Standards at the Hesburgh Libraries
-description: Our metadata standards for digital documents and media.
-markdown: redcarpet
+webhost:  'ndlib.github.io'
+baseurl:  '/metadata_application_profile'
+markdown:  redcarpet
 permalink: /:categories/:title/
-pygments: false
+pygments:  false
 exclude:
   - '.ruby-version'
   - 'Gemfile'
   - 'Gemfile.lock'
   - 'README.md'
 
+name: Digital Metadata Standards at the Hesburgh Libraries
+description: Our metadata standards for digital documents and media.
