@@ -18,7 +18,7 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc:title.alternative'
+    - 'dc:alternative'
   microdata:
     - 'alternateName'
   rdf_gem:
@@ -148,7 +148,7 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc:coverage.spatial'
+    - 'dc:spatial'
   microdata:
     - 'contentLocation'
   rdf_gem:
@@ -161,7 +161,7 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc:coverage.temporal'
+    - 'dc:temporal'
   rdf_gem:
     DC:
       - 'temporal'
@@ -258,7 +258,7 @@
     - 'dc:description:technical'
   rdf_gem:
     QualifiedDC:
-      - 'relation#ispartof'
+      - 'description#technical'
 
 - attribute:  'rights'
   name:       'Rights'
@@ -293,7 +293,7 @@
     - 'sourceOrganization'
   rdf_gem:
     QualifiedDC:
-      - 'identifier#URI'
+      - 'contributor#institution'
 
 - attribute:  'identifier'
   name:       'Identifier'
@@ -335,7 +335,7 @@
       - 'identifier#doi'
 
 - attribute:  'id'
-  name:       'Pid'
+  name:       'pid'
   generated:  true
   repeatable: false
   required:   true
@@ -389,7 +389,7 @@
   repeatable: false
   required:   false
   terms:
-    - 'dc.date.accessioned'
+    - 'dc:date.accessioned'
   rdf_gem:
     QualifiedDC:
       - 'date#accessioned'
@@ -400,7 +400,7 @@
   repeatable: false
   required:   false
   terms:
-    - 'dc.date.available'
+    - 'dc:available'
   rdf_gem:
     DC:
       - 'available'
@@ -411,7 +411,7 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc.date.copyrighted'
+    - 'dc:dateCopyrighted'
   microdata:
     - 'copyrightYear'
   rdf_gem:
@@ -424,7 +424,10 @@
   repeatable: false
   required:   false
   terms:
-    - 'dc.permissions'
+    - 'dc:rights.permissions'
+  rdf_gem:
+    QualifiedDC:
+      - 'rights#permissions'
 
 - attribute:  'requires'
   name:       'Requires'
@@ -432,7 +435,7 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc.requires'
+    - 'dc:requires'
   rdf_gem:
     DC:
       - 'requires'
@@ -443,7 +446,7 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc.isversionof'
+    - 'dc:isVersionOf'
   microdata:
     - 'version'
   rdf_gem:
@@ -456,7 +459,7 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc.isversionof.edition'
+    - 'dc:isversionof.edition'
   microdata:
     - 'bookEdition'
   rdf_gem:
