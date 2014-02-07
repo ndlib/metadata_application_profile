@@ -334,7 +334,7 @@
     QualifiedDC:
       - 'identifier#doi'
 
-- attribute:  'id'
+- attribute:  'pid'
   name:       'pid'
   generated:  true
   repeatable: false
