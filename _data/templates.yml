@@ -1,0 +1,20 @@
+---
+
+- id: 'article'
+  name: 'Article'
+  attributes:
+    - 'title'
+    - 'alternate_title'
+    - 'contributing_author'
+    - 'issn'
+    - 'doi'
+    - 'abstract'
+    - 'subject_keywords'
+    - 'source'
+    - 'publisher'
+    - 'rights'
+    - 'date_created'
+    - 'type'
+    - 'format'
+    - 'date_digitized'
+    - 'recommended_citation'

@@ -32,7 +32,6 @@
   required:   false
   terms:
     - 'dc:creator'
-    - 'dc:creator.author'
     - 'dc:creator.photographer'
     - 'dc:creator.illustrator'
     - 'dc:creator.organization'
@@ -42,6 +41,19 @@
   rdf_gem:
     DC:
       - 'creator'
+
+- attribute:  'author'
+  name:       'Author'
+  generated:  false
+  repeatable: true
+  required:   false
+  terms:
+    - 'dc:creator.author'
+  microdata:
+    - 'author'
+  rdf_gem:
+    QualifiedDC:
+      - 'creator#author'
 
 - attribute:  'contributor'
   name:       'Contributor'
@@ -61,6 +73,19 @@
     DC:
       - 'contributor'
 
+- attribute:  'contributing_author'
+  name:       'Contributing Author'
+  generated:  false
+  repeatable: true
+  required:   false
+  terms:
+    - 'dc:contributor.author'
+  microdata:
+    - 'contributor'
+  rdf_gem:
+    QualifiedDC:
+      - 'contributor#author'
+
 - attribute:  'date_created'
   name:       'Date Created'
   generated:  false
@@ -74,6 +99,19 @@
     DC:
       - 'created'
 
+- attribute:  'abstract'
+  name:       'Abstract'
+  generated:  false
+  repeatable: true
+  required:   false
+  terms:
+    - 'dc:abstract'
+  microdata:
+    - 'abstract'
+  rdf_gem:
+    DC:
+      - 'abstract'
+
 - attribute:  'description'
   name:       'Description'
   generated:  false
@@ -81,7 +119,6 @@
   required:   false
   terms:
     - 'dc:description'
-    - 'dc:description.abstract'
     - 'dc:description.tableofcontents'
   microdata:
     - 'description'
@@ -269,13 +306,33 @@
     - 'dc:identifier.ismn'
     - 'dc:identifier.govdoc'
     - 'dc:identifier.isbn'
-    - 'dc:identifier.issn'
     - 'dc:identifier.eissn'
-    - 'dc:identifier.doi'
     - 'dc:identifier.patent'
   rdf_gem:
     DC:
       - 'identifier'
+
+- attribute:  'issn'
+  name:       'ISSN'
+  generated:  false
+  repeatable: true
+  required:   false
+  terms:
+    - 'dc:identifier.issn'
+  rdf_gem:
+    QualifiedDC:
+      - 'identifier#issn'
+
+- attribute:  'doi'
+  name:       'DOI'
+  generated:  false
+  repeatable: true
+  required:   false
+  terms:
+    - 'dc:identifier.doi'
+  rdf_gem:
+    QualifiedDC:
+      - 'identifier#doi'
 
 - attribute:  'id'
   name:       'Pid'

@@ -1,0 +1,19 @@
+---
+layout: default
+title: Metadata Templates
+---
+
+{% for template in site.data.templates %}
+<h2 id="{{ template.id }}">{{ template.name }}</h2>
+<ul class="attribute listing">
+  {% for attribute in template.attributes %}
+  <li><a href="{{ site.baseurl }}/elements#{{ attribute }}">
+    {% for element in site.data.elements%}
+      {% if element.attribute == attribute %}
+        {{ element.name }}
+      {% endif %}
+    {% endfor %}
+  </a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
