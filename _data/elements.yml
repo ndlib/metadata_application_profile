@@ -459,12 +459,12 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc:isversionof.edition'
+    - 'dc:isVersionOf.edition'
   microdata:
     - 'bookEdition'
   rdf_gem:
     QualifiedDC:
-      - 'isversionof#edition'
+      - 'isVersionOf#edition'
 
 - attribute:  'recommended_citation'
   name:       'Recommended Citation'
@@ -472,7 +472,7 @@
   repeatable: true
   required:   false
   terms:
-    - 'dc:bibliographiccitation'
+    - 'dc:bibliographicCitation'
   rdf_gem:
     DC:
       - 'bibliographicCitation'
