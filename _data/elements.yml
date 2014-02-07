@@ -8,6 +8,9 @@
     - 'dc:title'
   microdata:
     - 'name'
+  rdf_gem:
+    DC:
+      - 'title'
 
 - attribute:  'alternate_title'
   name:       'Alternate Title'
@@ -18,6 +21,9 @@
     - 'dc:title.alternative'
   microdata:
     - 'alternateName'
+  rdf_gem:
+    DC:
+      - 'alternative'
 
 - attribute:  'creator'
   name:       'Creator'
@@ -33,6 +39,9 @@
     - 'dc:creator.artist'
   microdata:
     - 'author'
+  rdf_gem:
+    DC:
+      - 'creator'
 
 - attribute:  'contributor'
   name:       'Contributor'
@@ -48,6 +57,9 @@
     - 'dc:contributor.artist'
   microdata:
     - 'contributor'
+  rdf_gem:
+    DC:
+      - 'contributor'
 
 - attribute:  'date_created'
   name:       'Date Created'
@@ -58,6 +70,9 @@
     - 'dc:date.created'
   microdata:
     - 'dateCreated'
+  rdf_gem:
+    DC:
+      - 'created'
 
 - attribute:  'description'
   name:       'Description'
@@ -70,6 +85,9 @@
     - 'dc:description.tableofcontents'
   microdata:
     - 'description'
+  rdf_gem:
+    DC:
+      - 'description'
 
 - attribute:  'subject_keywords'
   name:       'Subject Keywords'
@@ -83,9 +101,12 @@
     - 'dc:subject.tgm'
   microdata:
     - 'keywords'
+  rdf_gem:
+    DC:
+      - 'subject'
 
-- attribute:  'coverage_spatial'
-  name:       'Coverage Spatial'
+- attribute:  'spatial_coverage'
+  name:       'Spatial Coverage'
   generated:  false
   repeatable: true
   required:   false
@@ -93,14 +114,20 @@
     - 'dc:coverage.spatial'
   microdata:
     - 'contentLocation'
+  rdf_gem:
+    DC:
+      - 'spatial'
 
-- attribute:  'coverage_temporal'
-  name:       'Coverage Temporal'
+- attribute:  'temporal_coverage'
+  name:       'Temporal Coverage'
   generated:  false
   repeatable: true
   required:   false
   terms:
     - 'dc:coverage.temporal'
+  rdf_gem:
+    DC:
+      - 'temporal'
 
 - attribute:  'language'
   name:       'Language'
@@ -111,6 +138,9 @@
     - 'dc:language'
   microdata:
     - 'inLanguage'
+  rdf_gem:
+    DC:
+      - 'language'
 
 - attribute:  'type'
   name:       'Type'
@@ -119,6 +149,9 @@
   required:   false
   terms:
     - 'dc:type'
+  rdf_gem:
+    DC:
+      - 'type'
 
 - attribute:  'repository_name'
   name:       'Repository Name'
@@ -127,6 +160,9 @@
   required:   false
   terms:
     - 'dc:contributor.repository'
+  rdf_gem:
+    QualifiedDC:
+      - 'contributor#repository'
 
 - attribute:  'publisher'
   name:       'Publisher'
@@ -137,6 +173,9 @@
     - 'dc:publisher'
   microdata:
     - 'publisher'
+  rdf_gem:
+    DC:
+      - 'publisher'
 
 - attribute:  'source'
   name:       'Source'
@@ -147,6 +186,9 @@
     - 'dc:source'
   microdata:
     - 'isBasedOnUrl'
+  rdf_gem:
+    DC:
+      - 'source'
 
 - attribute:  'digital_publisher'
   name:       'Digital Publisher'
@@ -155,6 +197,9 @@
   required:   false
   terms:
     - 'dc:publisher.digital'
+  rdf_gem:
+    QualifiedDC:
+      - 'publisher#digital'
 
 - attribute:  'date_digitized'
   name:       'Date Digitized'
@@ -163,6 +208,9 @@
   required:   false
   terms:
     - 'dc:date.digitized'
+  rdf_gem:
+    QualifiedDC:
+      - 'date#digitized'
 
 - attribute:  'digitizing_equipment'
   name:       'Digitizing Equipment'
@@ -171,6 +219,9 @@
   required:   false
   terms:
     - 'dc:description:technical'
+  rdf_gem:
+    QualifiedDC:
+      - 'relation#ispartof'
 
 - attribute:  'rights'
   name:       'Rights'
@@ -179,8 +230,9 @@
   required:   false
   terms:
     - 'dc:rights'
-  microdata:
-    - 'copyrightHolder'
+  rdf_gem:
+    DC:
+      - 'rights'
 
 - attribute:  'collection_name'
   name:       'Collection Name'
@@ -189,6 +241,9 @@
   required:   false
   terms:
     - 'dc:relation:ispartof'
+  rdf_gem:
+    QualifiedDC:
+      - 'relation#ispartof'
 
 - attribute:  'contributor_institution'
   name:       'Contributor Institution'
@@ -199,6 +254,9 @@
     - 'dc:contributor.institution'
   microdata:
     - 'sourceOrganization'
+  rdf_gem:
+    QualifiedDC:
+      - 'identifier#URI'
 
 - attribute:  'identifier'
   name:       'Identifier'
@@ -215,6 +273,9 @@
     - 'dc:identifier.eissn'
     - 'dc:identifier.doi'
     - 'dc:identifier.patent'
+  rdf_gem:
+    DC:
+      - 'identifier'
 
 - attribute:  'id'
   name:       'Pid'
@@ -223,6 +284,9 @@
   required:   true
   terms:
     - 'dc:identifier.URI'
+  rdf_gem:
+    QualifiedDC:
+      - 'identifier#URI'
 
 - attribute:  'format'
   name:       'Format'
@@ -231,6 +295,9 @@
   required:   false
   terms:
     - 'dc:format.mimetype'
+  rdf_gem:
+    QualifiedDC:
+      - 'format#mimetype'
 
 - attribute:  'size'
   name:       'Size'
@@ -242,6 +309,9 @@
     - 'dc:format.extent.duration'
     - 'dc:format.extent.dimensions'
     - 'dc:format.extent.file'
+  rdf_gem:
+    QualifiedDC:
+      - 'format#extent'
 
 - attribute:  'date_issued'
   name:       'Date Issued'
@@ -252,6 +322,9 @@
     - 'dc:date.issued'
   microdata:
     - 'datePublished'
+  rdf_gem:
+    DC:
+      - 'issued'
 
 - attribute:  'date_accessioned'
   name:       'Date Accessioned'
@@ -260,14 +333,20 @@
   required:   false
   terms:
     - 'dc.date.accessioned'
+  rdf_gem:
+    QualifiedDC:
+      - 'date#accessioned'
 
-- attribute:  'date_acailable'
+- attribute:  'date_available'
   name:       'Date Available'
   generated:  true
   repeatable: false
   required:   false
   terms:
     - 'dc.date.available'
+  rdf_gem:
+    DC:
+      - 'available'
 
 - attribute:  'date_copyrighted'
   name:       'Date Copyrighted'
@@ -278,6 +357,9 @@
     - 'dc.date.copyrighted'
   microdata:
     - 'copyrightYear'
+  rdf_gem:
+    DC:
+      - 'dateCopyrighted'
 
 - attribute:  'permissions'
   name:       'Permissions'
@@ -294,6 +376,9 @@
   required:   false
   terms:
     - 'dc.requires'
+  rdf_gem:
+    DC:
+      - 'requires'
 
 - attribute:  'version'
   name:       'Version'
@@ -304,6 +389,9 @@
     - 'dc.isversionof'
   microdata:
     - 'version'
+  rdf_gem:
+    DC:
+      - 'isVersionOf'
 
 - attribute:  'edition'
   name:       'Edition'
@@ -314,6 +402,9 @@
     - 'dc.isversionof.edition'
   microdata:
     - 'bookEdition'
+  rdf_gem:
+    QualifiedDC:
+      - 'isversionof#edition'
 
 - attribute:  'recommended_citation'
   name:       'Recommended Citation'
@@ -322,4 +413,7 @@
   required:   false
   terms:
     - 'dc:bibliographiccitation'
+  rdf_gem:
+    DC:
+      - 'bibliographicCitation'
 
