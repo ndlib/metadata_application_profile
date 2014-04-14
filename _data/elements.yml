@@ -126,7 +126,7 @@
     DC:
       - 'description'
 
-- attribute:  'subject_keywords'
+- attribute:  'subject'
   name:       'Subject Keywords'
   generated:  false
   repeatable: true
