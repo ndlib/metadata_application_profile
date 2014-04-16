@@ -42,7 +42,7 @@ title: Metadata Elements
     {% if element.microdata %}
       <ul class="itemprops listing">
         {% for itemprop in element.microdata %}
-        <li><a href="http://schema.org/{{itemprop}}/">{{itemprop}}</a></li>
+        <li><a href="http://schema.org/{{itemprop}}">{{itemprop}}</a></li>
         {% endfor %}
       </ul>
     {% endif %}
