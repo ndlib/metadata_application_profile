@@ -32,10 +32,11 @@
   required:   false
   terms:
     - 'dc:creator'
-    - 'dc:creator.photographer'
+    - 'dc:creator.artist'
+    - 'dc:creator.editor'
     - 'dc:creator.illustrator'
     - 'dc:creator.organization'
-    - 'dc:creator.artist'
+    - 'dc:creator.photographer'
   microdata:
     - 'author'
   rdf_gem:
@@ -62,11 +63,13 @@
   required:   false
   terms:
     - 'dc:contributor'
+    - 'dc:contributor.advisor'
+    - 'dc:contributor.artist'
     - 'dc:contributor.author'
-    - 'dc:contributor.photographer'
+    - 'dc:contributor.editor'
     - 'dc:contributor.illustrator'
     - 'dc:contributor.organization'
-    - 'dc:contributor.artist'
+    - 'dc:contributor.photographer'
   microdata:
     - 'contributor'
   rdf_gem:
@@ -107,7 +110,7 @@
   terms:
     - 'dc:abstract'
   microdata:
-    - 'abstract'
+    - 'description'
   rdf_gem:
     DC:
       - 'abstract'
@@ -125,6 +128,71 @@
   rdf_gem:
     DC:
       - 'description'
+
+- attribute:  'methodology'
+  name:       'Methodology'
+  generated:  false
+  repeatable: false
+  required:   false
+  terms:
+    - 'dc:description.methodology'
+  microdata:
+    - 'description'
+  rdf_gem:
+    QualifiedDC:
+      - 'description#methodology'
+
+- attribute:  'data_processing'
+  name:       'Data Processing'
+  generated:  false
+  repeatable: false
+  required:   false
+  terms:
+    - 'dc:description.data_processing'
+  microdata:
+    - 'description'
+  rdf_gem:
+    QualifiedDC:
+      - 'description#data_processing'
+
+- attribute:  'file_structure'
+  name:       'File Structure'
+  generated:  false
+  repeatable: false
+  required:   false
+  terms:
+    - 'dc:description.file_structure'
+  microdata:
+    - 'description'
+  rdf_gem:
+    QualifiedDC:
+      - 'description#file_structure'
+
+- attribute:  'variable_list'
+  name:       'Variable List'
+  generated:  false
+  repeatable: false
+  required:   false
+  terms:
+    - 'dc:description.variable_list'
+  microdata:
+    - 'description'
+  rdf_gem:
+    QualifiedDC:
+      - 'description#variable_list'
+
+- attribute:  'code_list'
+  name:       'Code List'
+  generated:  false
+  repeatable: false
+  required:   false
+  terms:
+    - 'dc:description.code_list'
+  microdata:
+    - 'description'
+  rdf_gem:
+    QualifiedDC:
+      - 'description#code_list'
 
 - attribute:  'subject'
   name:       'Subject Keywords'
