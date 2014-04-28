@@ -55,7 +55,7 @@ title: Metadata Elements
             {% if element.attribute == term %}
               <li><pre><code>map.{{term}}(in: RDF::{{namespace[0]}})</code></pre></li>
             {% else %}
-              <li><pre><code>map.{{element.attribute}}(to: '{{term}}', in RDF::{{namespace[0]}})</code></pre></li>
+              <li><pre><code>map.{{element.attribute}}(to: '{{term}}', in: RDF::{{namespace[0]}})</code></pre></li>
             {% endif %}
           {% endfor %}
         {% endfor %}
